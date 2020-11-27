@@ -1,0 +1,2 @@
+class Glacon < ApplicationRecord
+end
