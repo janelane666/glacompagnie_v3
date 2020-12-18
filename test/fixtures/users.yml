@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  surname: MyString
+  birthdate: 2020-12-18 15:34:56
+  address: MyString
+  zipcode: MyString
+  city: MyString
+  country: MyString
+  phone: MyString
+  email: MyString
+  password: MyString
+
+two:
+  name: MyString
+  surname: MyString
+  birthdate: 2020-12-18 15:34:56
+  address: MyString
+  zipcode: MyString
+  city: MyString
+  country: MyString
+  phone: MyString
+  email: MyString
+  password: MyString

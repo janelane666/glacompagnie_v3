@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_27_144605) do
+ActiveRecord::Schema.define(version: 2020_12_18_143456) do
 
   create_table "glacons", force: :cascade do |t|
     t.string "name"
@@ -18,6 +18,21 @@ ActiveRecord::Schema.define(version: 2020_11_27_144605) do
     t.float "price"
     t.integer "quantity"
     t.string "image"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "surname"
+    t.datetime "birthdate"
+    t.string "address"
+    t.string "zipcode"
+    t.string "city"
+    t.string "country"
+    t.string "phone"
+    t.string "email"
+    t.string "password"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
