@@ -3,6 +3,10 @@ class Api::V1::GlaconsController < ApplicationController
     render json: Glacon.all
   end
 
+  def show
+    render json: Glacon.find(params[:id])
+  end
+
   def create
     glacon = Glacon.create(glacon_params)
     render json: glacon
