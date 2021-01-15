@@ -8,4 +8,10 @@ Rails.application.routes.draw do
       end
     end
   end
+
+  Rails.application.routes.draw do
+    namespace :resources do
+        resources :images
+    end
+  end
 end

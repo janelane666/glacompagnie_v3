@@ -25,6 +25,6 @@ class Api::V1::GlaconsController < ApplicationController
   private
 
   def glacon_params
-    params.require(:glacon).permit(:id, :name, :description, :price, :quantity, :image_url)
+    params.require(:glacon).permit(:id, :name, :description, :price, :image, :quantity)
   end
 end
