@@ -59,3 +59,7 @@ gem 'pg', group: :production
 gem 'activerecord-postgresql-adapter'
 
 gem 'rack-cors'
+
+gem 'securerandom'
+
+gem 'babosa'

@@ -60,6 +60,7 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    babosa (1.0.4)
     bindex (0.8.1)
     bootsnap (1.5.1)
       msgpack (~> 1.0)
@@ -176,6 +177,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    securerandom (0.1.0)
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
@@ -235,6 +237,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-postgresql-adapter
+  babosa
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
@@ -245,6 +248,7 @@ DEPENDENCIES
   rack-cors
   rails (~> 6.0.3, >= 6.0.3.4)
   sass-rails (>= 6)
+  securerandom
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
