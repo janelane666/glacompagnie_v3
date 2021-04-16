@@ -19,7 +19,7 @@ class Api::V1::GlaconsController < ApplicationController
         json = Glacon.find_by(query)
       end
     else
-      glacons_data = Glacon.where({}).select("id, name, description, price, quantity, created_at, updated_at, slug,uuid")
+      glacons_data = Glacon.where({}).select("id, name, description, price, quantity, created_at, updated_at, slug, uuid, thumbnail")
       json = []
 
         for el in glacons_data
