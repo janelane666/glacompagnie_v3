@@ -10,7 +10,7 @@ class Glacon < ApplicationRecord
 
 
     begin
-      self.header = self.header ? Base64.encode64d(open(self.header).read).gsub("\n", "") : nil
+      self.header = self.header ? Base64.encode64(open(self.header).read).gsub("\n", "") : nil
       self.thumbnail = self.thumbnail ? Base64.encode64(open(self.thumbnail).read).gsub("\n", "") : nil
     rescue
       self.header = self.header
